@@ -31,7 +31,7 @@ hot=defaults('db_hotdata'); hot.update(apikey='${HOTDATA_API_TOKEN}',workspace_i
 nodes=[
  component('input','chat',{'hideForm':True,'mode':'Source','parameters':{},'type':'chat'}),
  component('researcher','agent_rocketride',{'instructions':instructions,'agent_description':'Trace claim drift using retrieved evidence and sponsor tools.','max_waves':16,'require_tool_call':True},input=[{'lane':'questions','from':'input'}]),
- component('model','llm_openai',{'profile':'gpt-oss-20b-free','gpt-oss-20b-free':{'apikey':'${ROCKETRIDE_APIKEY}','modelSource':'provider'}},control=[link('llm'),link('llm','analytics')]),
+ component('model','llm_openai',{'profile':'gpt-oss-120b-free','gpt-oss-120b-free':{'apikey':'${ROCKETRIDE_APIKEY}','modelSource':'provider'}},control=[link('llm'),link('llm','analytics')]),
  component('working_memory','memory_internal',{'type':'memory_internal'},control=[link('memory')]),
  component('sources','tool_http_request',http,control=[link('tool')]),
  component('evidence','tool_cognee',cog,control=[link('tool')]),

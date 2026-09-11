@@ -42,8 +42,8 @@
       "id": "model",
       "provider": "llm_openai",
       "config": {
-        "profile": "gpt-oss-20b-free",
-        "gpt-oss-20b-free": {
+        "profile": "gpt-oss-120b-free",
+        "gpt-oss-120b-free": {
           "apikey": "${ROCKETRIDE_APIKEY}",
           "modelSource": "provider"
         }
