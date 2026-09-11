@@ -1,0 +1,11 @@
+{
+  "answers": [
+    "require_tool_call is enabled but the agent produced an answer without invoking any tool (possible narrated or fabricated tool chain)"
+  ],
+  "name": "Question 1",
+  "path": "",
+  "result_types": {
+    "answers": "answers"
+  },
+  "objectId": "ecbe44a8-fc58-5a88-a4eb-ef17ab1518f0"
+}
